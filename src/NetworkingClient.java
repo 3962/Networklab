@@ -35,7 +35,7 @@ public class NetworkingClient {
                 BufferedReader stdIn = new BufferedReader(new
                         InputStreamReader(System.in));
 
-                System.out.println("Enter your name. Type Bye to exit. ");
+                System.out.println("Enter your name. Type Close to exit. ");
 
                 // Read data from standard input device and write it
                 // to the output stream of the client socket.
@@ -50,7 +50,7 @@ public class NetworkingClient {
                 client.close();
 
                 // Stop the operation
-                if (msg.equalsIgnoreCase("Bye")) {
+                if (msg.equalsIgnoreCase("Close")) {
                     break;
                 }
 
